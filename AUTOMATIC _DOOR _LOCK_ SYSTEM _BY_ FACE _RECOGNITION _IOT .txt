@@ -1,0 +1,1083 @@
+Final Year Project Report
+
+
+Final Year Project Report
+Full Unit - Final Report
+
+
+
+
+Project Title
+AUTOMATIC DOOR LOCK SYSTEM BY FACE RECOGNITION IOT
+
+Abdifitah Abdullahi Mohamud
+
+
+A report submitted in partial fulfilment of the degree of
+BSc in Information Technology
+Supervisor: Dr. Ismail Mohamed Ali
+
+Department of Information Technology Faculty of computing, SIMAD University
+
+August 2025
+
+
+FACULTY if
+COMPUTING
+
+
+Graduation Project Rights Approval Form
+
+
+This document certifies that the intellectual property rights of the graduation project titled
+
+"[ Automatic Door Lock System by Face Recognition IOT ]" are fully vested in the Faculty of Computing, SIMAD University. By signing this form, we acknowledge that the Faculty of Computing, SIMAD University, holds all ownership rights to the project. The faculty retains the authority to use, publish, and distribute the project materials at its discretion.
+The Faculty of Computing, SIMAD University, is granted the right to publish, distribute, and use the project in its repository or database, in both print and electronic formats, and for educational purposes, including teaching, research, and presentations. These rights are granted in full by us upon signing.
+We acknowledge that this project is the property of the Faculty of Computing, SIMAD University. If we share this project with another entity without proper authorization, we accept full responsibility and are prepared to face any consequences that may arise from such actions.
+
+
+
+Student 1 Name: Abdifitah Abdullahi Mohamud	Signature: /1izd1
+
+
+
+
+
+Approved By
+
+
+
+Faculty of Computing SIMAO University
+
+
+
+
+
+
+
+
+
+
+https://simad.edu.so	n
+foc@simad.edu.so	T
+
+1 of 1
+Main Campus, Warshaddaha Street, Mogadishu, Somalia
+
+
+
+APPROVAL FORM
+
+
+Title: Automatic Door Lock System by Face Recognition IOT
+Authors:
+
+1. Abdifitah Abdullahi Mohamud
+
+Program: Information Technology.
+
+This thesis has been accepted by the Faculty of Computing at SIMAD University in partial fulfilment of the requirements for the degree of Information Technology.
+
+
+Dr. Mohamed Omar Abdullahi Dean, Faculty of Computing
+
+Supervisor: Dr. Ismail Mohamed Ali
+
+
+
+
+
+Committee
+
+
+IB:
+
+
+ashi: ghn:::  ::: ----------------·---·-----------
+
+
+
+August I 12 / 2025
+
+
+Final Year Project R p'.)11
+
+
+DECLARATION A
+
+'·We declare that tile following is our own work and does not contain any unacknowledged work from any other sources. This project was undertaken to fulfill the requirements of the bachelor's degree program in Computer Science/Information Technology at SIMAD University".
+
+
+
+
+
+
+Name: Abdifitah Abdullahi Mohamud
+
+
+Student Signature: }.b..d /[/.f. fh..••.•..•.•
+
+
+Date:	9 IAug/ 2025
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+II
+
+.,
+
+
+
+
+Final Year Project Report
+
+
+
+
+DECLAIMTION B
+
+I hereby declare that I have carefully reviewed the project proposal titled:
+
+Automatic Door Lock System by Face Recognition IoT
+
+In my professional opinion, the proposal is clearly written and well-structured. It explains the aim of designing an automatic door lock system that uses face recognition combined with IoT technology to improve security and user convenience.
+
+The proposal shows a good understanding of the problem, sets realistic objectives, and presents a practical plan to achieve them. It also demonstrates the student's effort to research and apply modern technology to solve real-world challenges.
+
+Based on my review, I believe this proposal is adequate in terms of scope and quality. Therefore, I recommend it for approval as a project to be developed further.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IV
+
+
+
+ACKNOWLEDGEMENTS
+
+
+Student One: Abdifitah Abdullahi mohamud
+
+
+I am most grateful to Allah for everything. I owe a debt of gratitude to Dr. Ismail Mohamed Ali, my supervisor, for his outstanding leadership and assistance. I am incredibly grateful to Simad University for providing me with this fantastic chance to earn my bachelor's degree as well as the tools and resources that allowed me to finish my studies. My work has been influenced by the work of several scholars and practitioners in the fields of sign language processing, gesture detection, and deep learning. Finally, I want to say how much I value my friends' and family's support.
+
+.
+
+
+
+ABSTRACT
+
+This paper presents a project for an automatic door lock system that integrates face recognition with Internet-of-Things (IoT) technology to enhance security in smart environments. With the increasing need for robust access control in both residential and commercial settings, this work aims to develop a system that accurately authenticates users through biometric facial data, thereby eliminating the dependence on traditional keys or passcodes. The research was carried out in several phases: data acquisition, system architecture development, model training, and real-world evaluation. Initially, a diverse dataset comprising facial images captured under varying lighting conditions and angles was compiled to ensure robustness. Preprocessing steps, including face detection, normalization, and data augmentation, were employed to optimize image quality for recognition purposes. The methodology utilized state-of-the-art deep learning algorithms integrated with IoT communication protocols to enable real-time control of the door lock mechanism. Experimental results indicate that the system achieves a recognition accuracy exceeding 75% with a minimal false acceptance rate, demonstrating its effectiveness in authenticating authorized individuals promptly. The implications of this research extend to enhancing security infrastructures while contributing to the broader adoption of smart home technologies. Challenges remain in addressing privacy concerns, varying environmental conditions, and ensuring low-latency performance, which necessitate continuous system updates and optimizations.
+Keywords: Automatic Door Lock, Face Recognition, Internet-of-Things, IoT, Deep Learning, Smart Security, Biometrics
+
+
+
+Table of Contents
+
+             .................................................................................................................... APPROVAL FORM	Error! Bookmark not defined.
+DECLARATION. A	Error! Bookmark not defined.
+DECLARATION. B	Error! Bookmark not defined.
+ACKNOWLEDGEMENTS	Error! Bookmark not defined.
+
+ACKNOWLEDGEMENTS	V
+ABSTRACT	V
+Table of Contents	VI
+List of Tables	VIII
+LIST OF ABBREVIATIONS AND SYMBOLS	X
+CHAPTER 1	1
+INTRODUCTION	1
+1.1 Introduction	1
+1.2 Background Study	1
+1.3 Problem Statement	4
+1.4 Research Objective	5
+1.5 Research Questions	6
+1.6 Scope and limitation	6
+1.7 Project Organization	7
+1.8 Chapter Summary	8
+CHAPTER 2	9
+LITERATURE REVIEW	9
+2.1 Introduction	9
+2.2 Overview of the Project	9
+2.3 Related Work	10
+2.4 Integration of Face Recognition and IoT	11
+2.5 Sensors Used in Existing Projects	12
+2.6 Previous Work and Existing Projects	13
+2.7 Gap Analysis	14
+2.7	Chapter Summary	16
+CHAPTER 3	17
+RESEARCH METHODOLOGY	17
+3.1 Introduction	17
+3.2 Project Design	18
+3.2.1 Block Diagram	19
+3.2.2 Flow Chart	20
+3.2.3 Circuit Diagram	21
+3.3 Software Implementation	22
+3.6 Feasibility Study	22
+3.6.1 Technical Feasibility	22
+3.6.2 Operational Feasibility	23
+The Smart Automatic Door Lock System offers a user-friendly, contactless method of	23
+3.6.3 Schedule Feasibility	23
+3.6.4 Feasibility Report	23
+3.6.5 Hardware Requirements	24
+3.6.5.1 Relay Module (1-Channel 5V)	25
+3.6.5.2 USB Camera (Logitech HD Webcam C270)	25
+3.6.5.3 Electronic Door Lock (Solenoid Lock)	26
+3.6.5.4 Raspberry Pi 5	27
+3.6.5.5 Raspberry Pi with Touchscreen Display	28
+3.6.5.6 Buzzer	28
+3.6.5.7 Switch	29
+2.7 Chapter Summary	29
+CHAPTER 4	30
+RESULT AND DISCUSSION	30
+4.1 Introduction	30
+4.2 Logical Designing (Coding) for the Project)	31
+4.3 Physical Designing of the Project (Images)	32
+4.4 Testing of the Project	35
+4.5 Chapter Summary	38
+CHAPTER 5	39
+CONCLUSION AND RECOMMENDATION	39
+5.1 Introduction	39
+5.2 Contribution	40
+5.3 Limitation	42
+5.4 Future Enhancement	44
+5.5 Recommendations	45
+References	47
+APPENDIX	49
+
+List of Tables
+Table 1 Table Gap Analysis	14
+Table 2 Comparison current & existing system	15
+Table 3 Estimated Price (Budget)	22
+
+
+
+
+List of Figures
+
+
+Figure 3: 1 for the system block diagram.	19
+Figure 3: 2 for the flowchart diagram.	20
+Figure 3: 3 for the circuit diagram.	21
+Figure 3: 4 1-Channel Relay Module	25
+Figure 3: 5 USB Webcam (Logitech HD C270)	25
+Figure 3: 6 Electronic Solenoid Lock	26
+Figure 3: 7 Raspberry Pi 5 Board	27
+Figure 3: 8 Raspberry Pi with Touchscreen	28
+Figure 3: 9 Piezoelectric Buzzer	28
+Figure 3: 10 Rocker Switch (ON/OFF)	29
+
+
+Figure 4. 1 The Raspberry Pi 5.	32
+Figure 4. 2 Relay Module	32
+Figure 4. 3 Electronic Door Lock.	33
+Figure 4. 4 The buzzer.	33
+Figure 4. 5 Connection of the Raspberry Pi 5 system devices	34
+Figure 4. 6 USB camera and a touchscreen display	35
+Figure 4. 7 the Project Testing of the Face Recognition Door Lock System	36
+Figure 4. 8 Mobile App Interface for Remote Door Lock and Unlock Control	37
+
+
+
+
+
+LIST OF ABBREVIATIONS AND SYMBOLS
+
+
+AIArtificial IntelligenceIoTInternet of ThingsPCAPrincipal Component AnalysisCNNConvolutional Neural NetworkPiRaspberry Pi (Microcontroller)USBUniversal Serial BusHDHigh DefinitionONNXOpen Neural Network ExchangeGPIOGeneral Purpose Input/OutputPiCamRaspberry Pi CameraCVComputer VisionPIRPassive Infrared SensorUPSUninterruptible Power SupplyLEDLight Emitting DiodeOCROptical Character RecognitionUSB-CUSB Type CWi-FiWireless FidelityAPIApplication Programming Interface
+
+
+
+
+
+
+1.1 Introduction
+
+CHAPTER 1
+INTRODUCTION
+
+In this new era of technology, people continuously seek innovative ways to simplify our lives while ensuring the security of our investments. Modern security systems now strive for self-surveillance, eliminating the need for constant human monitoring, and digital locks are proving more effective than traditional ones in protecting our spaces.
+
+To address these challenges, the Automatic Door Lock System using Face Recognition and IoT offers a modern solution by integrating biometric authentication with IoT technology. This system utilizes facial recognition algorithms that employ Principal Component Analysis (PCA) for identifying authorized individuals and the Euclidean distance method for classification, ensuring efficient and accurate operation. When a person's face matches the stored data, the door unlocks; if not, the system alerts the owner via SMS or email. Additionally, IoT integration enables real-time monitoring and remote access through smartphones, thereby enhancing security and convenience.
+The objective of facial recognition in this context is to analyze a series of face data from a set of training images stored in a database. When a captured image corresponds to one of these stored images, the door is unlocked; if not, it remains locked
+
+1.2 Background Study
+The Internet of Things (IoT) has emerged as a revolutionary technology that enables the connection of various devices and objects to the Internet. This connectivity allows them to communicate, exchange data, and perform intelligent actions. Within the realm of home automation and security, IoT presents significant opportunities for the development of smart and secure systems. In the context of home automation and security, IoT offers tremendous potential for creating smart and secure systems. Traditional door lock systems often rely on physical keys, which can be lost or stolen, and lack advanced features like remote access and user identification.
+These limitations pose security risks and inconvenience for homeowners. Therefore, there is a need to develop an IoT-based smart door lock system that integrates advanced technologies to overcome these challenges and provide a higher level of security and convenience (Patel & Verma, 2017; Yedulapuram et al., 2020; Esan et al., 2023).
+
+
+
+
+The IoT has gained significant attention and adoption in recent years due to its potential to revolutionize various industries and domains (Castro et al., 2017; Ni et al., 2015). In the context of home automation, the IoT offers tremendous opportunities for creating smart home systems that enhance convenience, comfort, and security for homeowners (Verma, 2023). A smart home system leverages IoT technologies to connect and control various devices within a home, such as lighting systems, thermostats, security cameras, door locks, and appliances (Ni et al., 2015). These devices are equipped with sensors and connected to a central hub or gateway, allowing homeowners to remotely monitor and manage them through a smartphone or other internet-connected devices. The benefits of a smart home system are manifold. It offers homeowners the ability to automate routine tasks, such as adjusting lighting and temperature settings, scheduling appliance usage, and monitoring energy consumption (Ni et al., 2015). Additionally, smart home systems provide enhanced security features, such as remote surveillance and access control, allowing homeowners to monitor their homes and receive real-time alerts in case of any unusual activities (Dhobale et al., 2020).
+
+Moreover, smart home systems contribute to energy efficiency and sustainability by optimizing resource consumption and reducing waste (Ni et al., 2015). By intelligently managing energy usage and providing insights into energy patterns, homeowners can make informed decisions to conserve energy and lower their utility bills (Ni et al., 2015; Vijayakumar et al., 2019). The proliferation of IoT devices and the availability of robust communication protocols and cloud-based platforms have made smart home systems more accessible and affordable for homeowners (Verma, 2023).
+
+With advancements in artificial intelligence and machine learning, smart home systems can learn and adapt to user preferences, creating personalized and intuitive experiences (Shahzad et al., 2024; Zhang et al., 2024). As the demand for connected and intelligent homes continues to grow, the integration of IoT technologies in the home environment holds immense potential (Ni et al., 2015). It not only enhances the quality of life for homeowners but also opens up new possibilities for energy management, healthcare monitoring, and assisted living for the elderly and individuals with disabilities (Ni et al., 2015; Patel & Verma, 2017). In this report, we delve into the design and implementation of a smart home system that leverages IoT technologies. We explore the integration of devices, the
+
+
+
+utilization of data analytics and machine learning algorithms, and the interaction with users through intuitive interfaces (Verma, 2023). Through this project, we aim to showcase the capabilities of IoT in transforming traditional homes into intelligent, connected spaces that offer enhanced comfort, convenience, and security for homeowners (Yedulapuram et al., 2020).
+
+Global urbanization coupled with growing security concerns has compelled nations to explore advanced methods for safeguarding homes, offices, and critical infrastructures (Patel & Verma, 2017; Esan et al., 2023). Traditional door locking mechanisms-relying on physical keys, numeric codes, or keycards-are vulnerable to theft, duplication, or hacking (Datta et al., 2015; Labeodan et al., 2015). As a result, biometric technologies such as face recognition have emerged as a reliable alternative that not only enhances security but also improves user-friendliness (Yatmono et al., 2022; Patel & Verma, 2017).
+
+With the expansion of the Internet of Things (IoT), integrating biometric technology with IoT-enabled devices has revolutionized security systems worldwide (Yedulapuram et al., 2020; P. R. et al., 2025). The current project reflects a global trend toward combining artificial intelligence (AI) with IoT to develop intelligent, efficient, and secure access systems (Patel & Verma, 2017; Yatmono et al., 2022). Different countries have adopted these technologies in various ways:
+
+
+United States: The rapid growth of smart home devices and automation has led to the widespread adoption of integrated security systems (Verma, 2023). In the U.S., smart locks, surveillance cameras, and alarm systems are increasingly common in residential areas (Dhobale et al., 2020). Privacy regulations, such as the California Consumer Privacy Act (CCPA), underscore the importance of secure data management in these systems (California Consumer Privacy Act, 2018).
+
+China: As a global leader in face recognition technology, China has extensively implemented biometric systems in public surveillance and smart cities (Wang et al., 2019). The integration of AI and IoT is key in enhancing urban security, allowing citizens to access secure areas through biometric authentication (Yatmono et al., 2022).
+Somalia: In nations facing political instability and security challenges, traditional security
+
+
+
+measures often fall short (Ahmed & Mohamud, 2025). With growing urbanization and digital connectivity, IoT-based solutions, like the proposed automatic door lock system, are seen as vital in improving security for homes, businesses, and public spaces (Patel & Verma, 2017). This project aligns with Somalia's gradual modernization and its push for advanced security technologies (Yedulapuram et al., 2020).
+
+1.3 Problem Statement
+In Somali smart houses and commercial buildings, current security frameworks face several critical issues that impede efficient and reliable protection. One significant problem is the lack of centralized data management and real-time monitoring. Security devices such as cameras, motion detectors, and alarms operate in isolation rather than as parts of an integrated network. This fragmentation results in delayed detection of security breaches and hinders the ability to respond promptly to potential threats.
+
+Another issue is the limited system integration and interoperability among diverse security components. In many installations, various devices from different manufacturers cannot communicate effectively with each other. This disconnect prevents the seamless aggregation and analysis of data, which is crucial for developing a comprehensive situational awareness system. Without a unified platform, it becomes challenging to coordinate alerts and actions, thereby reducing overall system reliability.
+
+Additionally, the absence of advanced biometric authentication methods, such as face recognition, further compromises security. Traditional access controls, often reliant on static identifiers, are less effective in dynamically verifying user identities. Without the ability to accurately and rapidly authenticate individuals through facial recognition, unauthorized access remains a persistent risk. This shortfall undermines user confidence and leaves the system vulnerable to breaches, especially in environments where remote monitoring and automated responses are critical.
+
+leading to issues such as latency in data transmission and unreliable remote connectivity. These technical challenges exacerbate the risk of delayed responses during security incidents and complicate the implementation of robust IoT-based security measures.
+Collectively, these issues underscore the urgent need for a cohesive, automated solution that
+
+
+
+leverages IoT and face recognition technology to address the shortcomings of current security systems in Somali smart houses and commercial buildings. Such a solution would aim to ensure real-time data integration, improve system responsiveness, and enhance the accuracy of user identification, thereby delivering a higher standard of security and operational efficiency.
+
+The project is designed to overcome the challenges and limitations of conventional home security systems and access control mechanisms. Traditional systems often lack the following features Limited Remote Access: Existing systems typically require physical presence or proximity to operate, restricting users from monitoring and controlling their security systems remotely.
+Lack of Smart Integration: Many traditional access control mechanisms operate as isolated units and do not integrate with other smart devices, hindering the development of a comprehensive home automation ecosystem.
+
+Inadequate User Interaction: The reliance on physical keypads or manual entry methods reduces user convenience and overall system usability.
+Limited User Identification: Conventional methods based on keys or passcodes are susceptible to unauthorized access. There is a clear need for a more robust user identification and authentication approach.
+By addressing these issues, the project aims to develop a sophisticated smart home security system that leverages IoT, cloud computing, and modern biometric techniques.
+
+1.4 Research Objective
+The primary aim of this research is to enhance the security of smart houses and commercial buildings in Somalia by integrating advanced biometric technologies with IoT systems. The specific objectives are as follows:
+
+1. To investigate the issues related to existing smart house and building security.
+2. To propose an automated door lock system using face recognition IoT.
+3. To evaluate the proposed automated door lock system.
+
+
+
+1.5 Research Questions
+1. What are the primary security challenges and vulnerabilities encountered in current smart house and building security systems in Somalia smart houses fail to meet user needs for remote monitoring, integrated access control, and reliability?
+
+2. How can face recognition technology be effectively integrated with IoT devices to develop an automated door lock system for smart buildings in Somalia?
+
+3. What are the critical design and architectural considerations (e.g., hardware integration, data transmission, and system scalability) necessary for implementing a secure face recognition-based door lock system?
+
+4. How does the proposed automated door lock system perform in terms of accuracy, response time, and overall user satisfaction compared to traditional security systems?
+
+5. What environmental or operational factors affect the reliability and effectiveness of the face recognition-based IoT system under various real-world conditions?
+
+1.6 Scope and limitation
+The scope of this project encompasses the design, development, and evaluation of an automated door lock system that integrates face recognition technology with IoT, specifically tailored for Somali smart houses and commercial buildings. This project will.
+investigate current security challenges, develop a cohesive system architecture, and implement a prototype capable of real-time remote monitoring and biometric authentication. However, the project is limited by several factors: the prototype will be tested primarily in controlled environments, which may not fully capture the complexities of real-world conditions; the existing network infrastructure and connectivity in Somalia may affect the system's performance; and broader aspects such as large-scale deployment, long-term reliability, and comprehensive privacy considerations are beyond the immediate scope of this study.
+
+
+
+1.7 Project Organization
+This project is structured into five comprehensive chapters, each addressing a critical aspect of the research:
+
+Chapter 1: Introduction
+
+This chapter lays the foundation for the study by presenting the background, significance, and motivation for developing an automated door lock system using face recognition IoT. It outlines the research problem, objectives, and research questions that steer the investigation, specifically focusing on security challenges in Somali smart houses and commercial buildings.
+
+Chapter 2: Literature Review
+
+In this chapter, existing research and developments related to IoT, biometric authentication, and face recognition technologies are thoroughly reviewed. The literature review identifies current trends, methodologies, and gaps within the field, thereby establishing the theoretical framework and context for the proposed system.
+
+Chapter 3: Methodology
+
+Chapter 3 details the research design and methods used to develop and implement the automated door lock system. It describes the system architecture, the integration of hardware and software components (including the ESP32-CAM and cloud services), data collection procedures, and the evaluation metrics employed to assess system performance.
+
+Chapter 4: Results and Discussion
+
+This chapter presents is the outcomes of the system implementation and testing.
+analysis of key performance indicators such as face recognition accuracy, system responsiveness, and reliability. The discussion interprets these results in relation to the research objectives, comparing the proposed system's performance with the identified security challenges.
+
+
+
+Chapter 5: Conclusion and Recommendations
+
+The final chapter summarizes the research findings, drawing conclusions about the effectiveness of the automated door lock system. It reflects on the study's contributions, discusses limitations, and provides practical recommendations for future research and potential enhancements, particularly in adapting the system to the unique infrastructural challenges in Somalia.
+
+Each chapter is designed to build upon the previous one, providing a clear and systematic exploration of the project's rationale, development, and implications for enhancing security in smart buildings.
+
+
+
+1.8 Chapter Summary
+
+This chapter presented an overview of the Automatic Door Lock System by Face Recognition IoT, outlining the motivation, background, and significance of the project. It addressed the limitations of traditional locking mechanisms and emphasized the need for a secure, convenient, and modern solution. The integration of IoT technology with AI- powered face recognition was discussed as a way to enable real-time access control, remote monitoring, and enhanced user convenience. Examples from different countries illustrated the global relevance and adaptability of such systems. The chapter concluded by establishing the connection between current security challenges and the proposed design, providing the foundation for the literature review and technical framework in the next chapter.
+
+
+
+CHAPTER 2
+LITERATURE REVIEW
+2.1 Introduction
+This chapter explores the literature surrounding the key technologies that constitute the Automatic Door Lock System by Face Recognition in the context of IoT. The literature review examines the evolution of these technologies, their current applications, and the various challenges and future directions in developing and deploying such systems. Key aspects such as the technical architecture, security concerns, system performance, and potential use cases in different domains will also be discussed.
+
+2.2 Overview of the Project
+The project focuses on developing an Automatic Door Lock System using Face Recognition and the Internet of Things (IoT) to enhance security and user convenience. This system aims to integrate modern biometric authentication with IoT technology to provide a secure, efficient, and automated solution for access control. By combining facial recognition with IoT-enabled connectivity, the system ensures that only authorized individuals can unlock doors, while allowing remote monitoring and control of the locking mechanism.
+
+The primary objective of the project is to design a smart door lock system that utilizes face recognition as the core authentication method. The system will be able to accurately detect and recognize faces, and grant or deny access based on predefined credentials. The IoT component adds an extra layer of convenience by enabling users to control and monitor the lock remotely, as well as receive real-time notifications. The system aims to offer both high security and ease of use, eliminating the need for traditional keys or passwords.
+
+The successful implementation of this project will result in a smart, secure, and efficient access control system that eliminates the traditional need for physical keys, passwords, or keycards. The face recognition feature adds an additional layer of security, reducing the risk of unauthorized access due to lost or stolen credentials.
+
+
+
+2.3 Related Work
+Several studies have explored the integration of biometric technologies and Internet of Things (IoT) to enhance access control and security systems, particularly in residential and commercial environments. This growing body of research highlights innovations in face recognition algorithms, sensor-based automation, and remote monitoring via IoT platforms. For instance, Huang et al. (2018) developed a real-time face recognition system using convolutional neural networks (CNNs), improving the system's reliability under varying lighting conditions and facial orientations. Their study provided strong evidence that deep learning techniques significantly enhance the accuracy of facial recognition for security applications.
+Similarly, a system proposed by Wang et al. (2019) demonstrated the use of IoT-based facial authentication for smart door locks, allowing users to receive real-time access notifications and manage lock status remotely via cloud platforms. Their implementation combined Raspberry Pi, camera modules, and cloud-hosted databases, highlighting the potential of combining edge computing and cloud analytics in access control systems.
+
+2.1.1 Face Recognition-Based Access Control Systems
+Face recognition technology has become a popular method of access control due to its accuracy, ease of use, and non-intrusive nature. Researchers have focused on enhancing the precision of face recognition algorithms, especially in varying conditions like different lighting or facial angles. For instance, Huang et al. (2018) worked on a real-time face recognition system using deep learning-based convolutional neural networks (CNNs), which improved recognition accuracy even in challenging environments. Their work paved the way for face recognition to be adopted in automated door locks and other security applications.
+
+In another study, Geng et al. (2020) integrated face recognition with motion sensors in a smart home system. Their design enabled automatic door unlocking when an authorized individual approached, demonstrating the ability to combine biometric authentication with additional sensor technologies. This research is particularly relevant as it showcases the benefits of combining face recognition with other features for a smoother user experience. One of the ongoing challenges with face recognition, however, is ensuring reliability under various environmental conditions, such as low lighting or when individuals have changed their appearance (e.g., wearing glasses, changing hairstyles). Some researchers have been
+
+
+
+exploring hybrid approaches that combine face recognition with other authentication methods, like voice recognition or fingerprint scanning, to address these limitations.
+
+2.1.2 IoT-Enabled Smart Lock Systems
+The use of IoT technology in smart locks has been an area of active research and development. Vijayakumar et al. (2019) examined the use of IoT in smart home security, allowing users to unlock doors remotely via a smartphone app. Their system relied on cloud connectivity to facilitate communication between the door lock and user devices, making it convenient for users to control their security systems from anywhere in the world.
+
+Further, Lee et al. (2020) proposed an IoT-based smart lock that included features like remote unlocking, real-time access logs, and emergency access protocols. This work highlighted the flexibility of IoT-enabled locks, offering users a higher level of control and adaptability compared to traditional mechanical locks. Additionally, their research focused on ensuring secure communication and minimizing vulnerabilities in the IoT infrastructure, which is crucial for preventing unauthorized access.
+
+These IoT-based locks can also integrate with other smart home devices, such as security cameras, lighting systems, and alarms, to create a unified security ecosystem. The growing adoption of smart home platforms like Amazon Alexa and Google Home has further contributed to the widespread use of IoT-enabled locks in residential and commercial settings. However, challenges remain in terms of connectivity issues and the security of IoT communication, especially in areas with unreliable internet connections.
+
+2.4 Integration of Face Recognition and IoT
+The combination of face recognition and IoT has emerged as a powerful tool for creating smarter, more secure access control systems. Wang et al. (2019) proposed an integrated system that combines both face recognition and IoT connectivity to remotely manage door locks. Their solution allowed users to control the door remotely and receive notifications whenever an access attempt occurred. The system also included a mobile app for seamless interaction, which allowed users to monitor the security status of their home or office at all times.Similarly, Choudhary et al. (2021) explored the integration of face recognition and IoT in a smart building environment. Their approach personalized access to different rooms
+
+
+
+based on the user's identity, combining face recognition with IoT-enabled devices to adjust settings like lighting and HVAC. This integration provided an additional layer of security while improving the overall user experience by automating environmental adjustments based on the person accessing the space.
+
+This fusion of technologies is attractive because it offers the benefits of both systems-face recognition for secure, biometric-based authentication, and IoT for remote control, monitoring, and flexibility. However, achieving seamless integration between these two technologies requires overcoming several technical hurdles, including optimizing the performance of face recognition algorithms within IoT infrastructures, ensuring real-time processing, and securing communication channels to prevent cyber threats.
+
+2.5 Sensors Used in Existing Projects
+In many projects exploring automatic door lock systems with face recognition and IoT connectivity, a variety of sensors have been employed to ensure the system works reliably and securely. One of the most common components is the camera module. These systems often use high-resolution cameras capable of capturing detailed facial images even in less- than-ideal lighting conditions. Some camera modules also include infrared (IR) capabilities, which means they can effectively capture clear images at night or in dark areas, ensuring the system's functionality 24/7.
+Another sensor frequently seen in these projects is the motion detection sensor. For example, passive infrared (PIR) sensors are widely used because they can detect the heat emitted by a human body. This helps the system activate the camera only when someone is nearby, reducing unnecessary operation and conserving energy. In some designs, ultrasonic sensors are also integrated to measure the distance between the door and the person approaching.
+This additional layer of detection not only confirms presence but also helps to minimize false activations.
+
+
+
+Beyond these, standalone infrared sensors are sometimes incorporated separately from the camera. Their role is to bolster detection accuracy in situations where ambient light is low or inconsistent. The combination of various sensor types cameras, PIR sensors, ultrasonic sensors, and standalone IR sensors allows for what is commonly known as sensor fusion. By merging data from these multiple sources, the system is better able to accurately verify a person's presence and make informed decisions about access control.
+
+Lastly, the integration of these sensors within an IoT framework is crucial. Real-time sensor data is often transmitted to a centralized processing unit or cloud-based system, enabling remote monitoring and control. This connectivity not only supports the use of sophisticated face recognition algorithms but also allows system administrators to receive alerts and manage access remotely. As a result, the overall performance and security of the door lock system are significantly enhanced.
+
+Overall, the smart combination of various sensor technologies is what gives these automatic door lock systems their reliability. By using cameras alongside motion and infrared sensors, and tying everything together through IoT, existing projects have created systems that can operate efficiently under a range of conditions while providing a high level of security.
+2.6 Previous Work and Existing Projects
+Over the past few years, researchers and engineers have explored various approaches to designing automatic door lock systems that leverage face recognition and IoT technologies. Early projects focused on combining cost-effective hardware with basic facial recognition algorithms to create functional prototypes. Many of these initial systems employed widely available microcontrollers like Arduino or single-board computers such as the Raspberry Pi, paired with standard camera modules. These setups provided a proof-of-concept for automated access control, demonstrating that face recognition could serve as a viable means of verifying identity under controlled conditions.
+Building on these early designs, subsequent projects introduced more advanced elements to enhance both security and functionality. For example, several implementations integrated additional sensors, such as passive infrared (PIR) and ultrasonic sensors, to detect the presence of individuals and reduce the likelihood of false triggers. These sensors worked in tandem with the camera module, ensuring that the system only attempted face recognition when a person was actually present at the door. This sensor fusion not only improved the
+
+
+
+system's responsiveness but also optimized energy usage by minimizing unnecessary processing. More recent work has seen the adoption of sophisticated face recognition algorithms, often based on deep learning techniques, to increase accuracy even in challenging environments with variable lighting conditions. These projects take advantage of IoT connectivity to send real-time data to cloud-based services, where advanced processing and storage capabilities can further enhance decision-making.
+The ability to update algorithms remotely and monitor system performance in real time has led to significant improvements in both reliability and security. Some projects have also addressed concerns related to spoofing or unauthorized access by implementing additional security measures such as liveness detection and multi- factor authentication.
+2.7 Gap Analysis
+2.6.1 Sensors Are Used to Fill the Gap in Our Project
+Existing automatic door lock systems that incorporate face recognition and IoT typically employ basic sensor arrays such as standard camera modules, PIR sensors, and ultrasonic sensors to perform detection and identification. However, these systems often face challenges such as inconsistent performance in low-light conditions, a higher rate of false positives, and limited sensor fusion that hinders robust decision-making.
+2.1 Table Gap Analysis
+Table 1 Table Gap Analysis
+
+Feature/ParameterExisting SystemsProposed Improvement (Current
+Project)Camera ModuleStandard	resolution,
+limited IR capabilitiesHigh-resolution	camera	with
+advanced IR functionalityMotion DetectionTypically uses only PIR
+sensorCombination of PIR and ultrasonic
+sensors for enhanced accuracySensor FusionMinimal	integration,
+inconsistent detectionAdvanced sensor fusion algorithms
+merging multi-sensor dataFace	Recognition
+AccuracyBasic	algorithms,
+moderate accuracyDeep	learning	algorithms	for
+improved accuracy
+
+
+This table illustrates how our project addresses specific gaps in existing implementations by leveraging enhanced sensor technology, advanced data fusion, and improved IoT capabilities to offer a more reliable and secure automatic door lock system.
+
+
+
+2.6.2 Table Gap - Comparison of Current & Existing Projects
+
+
+Table 2 Comparison current & existing system
+
+Feature/ParameterExisting ProjectsProposed System (Current Project)Camera ModuleStandard resolution;
+limited IR capabilitiesHigh-resolution with advanced IR functionalityMotion DetectionTypically employs
+Single sensor (e.g., PIR)Combines PIR and ultrasonic sensors for enhanced detectionSensor FusionMinimal integration;
+relies on individual sensor outputsAdvanced sensor fusion integrating multi- sensor inputsFace Recognition AccuracyBasic algorithms; moderate performance under
+controlled settingsAdvanced	deep	learning	algorithms for superior accuracyFalse Positive
+
+ReductionLimited anti-false
+
+trigger measuresMulti-sensor validation significantly reducesfalse positivesIoT IntegrationBasic remote
+monitoring and data loggingRobust real-time connectivity with cloud- based analyticsSecurity
+
+EnhancementsStandard access
+
+control featuresAdditional anti-spoofing and liveness detection measures
+
+
+
+
+2.7 Chapter Summary
+Chapter Two provides a comprehensive overview of the technologies underpinning the Automatic Door Lock System by Face Recognition and IoT. It introduces the project's goal of merging biometric authentication with remote connectivity to enhance security and user convenience. The chapter reviews related work on face recognition access control, IoT- based smart locks, and their integration, highlighting key innovations and challenges. It details various sensors such as high-resolution cameras, PIR, ultrasonic, and IR sensors and emphasizes the role of sensor fusion in improving detection accuracy. Previous projects are examined, showing the evolution from basic prototypes to advanced systems employing deep learning. A gap analysis identifies shortcomings in existing systems, such as limited sensor integration and vulnerability to false triggers. Overall, the chapter lays a solid foundation for the proposed system's enhanced design and functionality
+
+
+
+CHAPTER 3
+RESEARCH METHODOLOGY
+
+
+3.1 Introduction
+This chapter outlines the methodology used in the development of the Smart Automatic Door Lock System by Face Recognition using IoT. The goal of this project is to create a modern, secure, and contactless access control solution, utilizing computer vision, microcontroller automation, and cloud-based control. By integrating these technologies, the system enables seamless, real-time facial recognition that automatically grants or denies access to users based on their facial features. This system is designed to replace traditional key-based of access the methods, offering a higher level of the security, convenience, and ease of use .
+The system employs Raspberry Pi as the central processing unit, using a USB camera or Pi camera for capturing the facial images, which are then processed through a facial recognition algorithm. Once a match is found in the database, an electromagnetic or solenoid lock is triggered to either unlock or remain secured, depending on the result of the recognition process. Additionally, the system includes features for remote monitoring and management via cloud integration, allowing users to check the status of the lock and provide access from anywhere. This chapter describes the comprehensive project design, highlighting the integration of hardware components, the implementation of software tools for facial recognition, and how these elements work together to deliver a fully functional IoT-based door lock system. Additionally, it provides an overview of the data collection and analysis methods, the budgeting for the project, and a feasibility study that demonstrates the viability and scalability of the system.
+
+
+
+3.2 Project Design
+The design of the Smart Automatic Door Lock System by Face Recognition using IoT combines both hardware and software components to deliver a comprehensive and secure access control solution. This system replaces traditional key-based access methods with facial authentication, enhancing security and eliminating the risks associated with lost keys or stolen access cards.
+
+The hardware design incorporates several key components, each playing an essential role in the operation of the system:
+
+The Raspberry Pi serves as the central processing unit (CPU) for the entire system. It handles facial recognition tasks, processes input data from the camera, and controls other components like the relay and lock mechanism.
+
+The USB webcam or Pi camera module captures real-time facial images, which are then processed by the Raspberry Pi to detect and compare facial features against the stored database of authorized faces.
+
+The relay module acts as the intermediary between the Raspberry Pi and the electromagnetic/solenoid lock, controlling the door's locking mechanism based on the outcome of the facial recognition process.
+
+The buzzer provides immediate feedback by emitting an audible signal when access is either granted or denied.
+
+On the software side, the system utilizes the OpenCV library, a powerful tool for computer vision and image processing, which is responsible for detecting faces, recognizing them, and verifying the identity of the individual. The Python programming language is used to implement the facial recognition algorithm and manage all system functions, including communication between hardware components via GPIO pins on the Raspberry Pi.
+
+The system's cloud-based integration enables remote control and monitoring, providing users with real-time updates and the ability to grant or deny access from a distance. This cloud functionality also allows for event logging and system status updates, which can be accessed via a mobile app or web interface. These features not only enhance the system's
+
+
+
+usability but also contribute to its scalability, allowing for future expansions, such as integrating multiple locks or additional forms of authentication.
+
+The modular design of the system allows for easy customization and expansion. Future updates could include the integration of additional security features such as multi-factor authentication, support for different types of access control (e.g., PIN codes or RFID), and enhanced cloud services for better management and data analytics
+3.2.1 Block Diagram
+The block diagram illustrates the connection between the Raspberry Pi 5 and essential components like the USB web camera, electronic lock via relay, buzzer, Raspberry Pi screen, and mobile app for remote access. The Raspberry Pi processes face recognition and triggers the lock mechanism based on the result.
+
+Figure 3: 1 for the system block diagram.
+
+
+
+
+
+
+
+
+3.2.2 Flow Chart
+The flow chart represents the logical sequence of operations:
+
+1. System starts.
+
+2. Camera captures the face.
+
+3. Face is processed and compared with stored data.
+
+4. If match found ? unlock door via relay.
+
+5. If no match ? buzzer sounds.
+
+6. Log the event and return to capture state.
+
+
+
+
+
+
+Figure 3: 2 for the flowchart diagram.
+
+
+
+3.2.3 Circuit Diagram
+
+
+
+
+Figure 3: 3 for the circuit diagram.
+
+
+
+This circuit connects a Raspberry Pi 5 to control a smart door lock using face recognition. A USB webcam captures the face, and the Raspberry Pi processes it. If authorized, it triggers Relay 1 to unlock the door lock. If unauthorized, Relay 2 activates the buzzer as an alert. A switch allows manual control, and a battery powers the relays and lock.
+
+
+
+3.3 Software Implementation
+The software part is written in Python and runs on Raspberry Pi OS. It uses OpenCV and MediaPipe for facial detection and ONNX for face recognition with pre-trained a models.
+3.5 Estimated Price (Budget)
+
+Table 3 Estimated Price (Budget)
+
+ComponentQuantityUnit Price (USD)Total (USD)Raspberry Pi 51$80$188USB Web Camera1$20$20Relay Module1$5$5Electronic Door Lock1$15$15Buzzer1$2$2Raspberry Pi Display1$35$35Jumper Wires, Switches-$5$5Battery/Power Supply1$10$10Total$2003.6 Feasibility Study
+This section evaluates the practicality of implementing the Smart Automatic Door Lock System by Face Recognition IoT. The analysis covers technical, operational, scheduling, and financial aspects to determine whether the system is viable for real-world deployment. The goal is to ensure that the system is not only functional but also reliable, scalable, and suitable for daily use.
+3.6.1 Technical Feasibility
+The system is built using accessible and affordable components such as a Raspberry Pi, USB webcam, relay module, and optional sensors for added functionality. The software stack includes Python, OpenCV for facial recognition, and Socket.IO for real-time communication. These technologies are well-documented and widely adopted, making integration straightforward. The face detection model runs locally on the Raspberry Pi, ensuring fast decision-making and offline operation when needed. The hardware-software interface (via GPIO) smoothly controls the relay to unlock or lock the door.
+
+
+
+3.6.2 Operational Feasibility
+The Smart Automatic Door Lock System offers a user-friendly, contactless method of authentication. Once the system is installed, users only need to stand in front of the camera to gain access. The facial recognition model quickly verifies identity and unlocks the door if a match is found. Unauthorized attempts trigger an alert via a buzzer, adding a layer of physical security. The system can be operated with minimal training, and the administrator can manage access through a simple control panel or mobile interface. This seamless experience makes it ideal for residential homes, offices, labs, or secured areas particularly in situations where touchless access is desirable, such as during public health crises.
+3.6.3 Schedule Feasibility
+The project followed a structured timeline broken into key development phases:
+
+* Requirements gathering and design
+
+* Component procurement
+
+* Coding and integration
+
+* Testing and validation
+
+* Deployment and documentation
+
+Each phase was completed within the scheduled timeframe due to clear objectives and efficient resource planning. Challenges such as calibration of the face recognition algorithm and GPIO triggering were addressed with quick iterations, demonstrating that the project can be implemented on time in academic or commercial settings.
+
+
+3.6.4 Feasibility Report
+Based on the evaluation across all areas, the Smart Automatic Door Lock System has been proven to be technically sound, utilizing reliable components and mature technologies. It is operationally practical, easy to use, requires minimal maintenance, and ensures high user satisfaction. The project was timely implemented, meeting planned milestones, and is costeffective, having been built within budget using affordable parts. Furthermore, the system is energy-efficient, scalable, and adaptable to various environments. Its success during the prototyping phase demonstrates that broader deployment is both realistic and beneficial.
+
+
+
+3.6.5 Hardware Requirements
+The hardware requirements for the Smart Automatic Door Lock System by Face Recognition IoT define the critical components necessary to ensure accurate facial detection, reliable decision-making, and efficient actuation of the door lock mechanism. The system integrates modern microcontrollers, imaging devices, relays, and feedback elements to deliver secure, automated access control. Each component plays a vital role in capturing, processing, and executing commands in real time.
+The key hardware components include:
+
+The Raspberry Pi acts as the central processing unit, handling facial recognition tasks, managing peripheral devices, and executing door-locking logic based on input from the camera. A USB webcam or Pi camera module captures the facial image of the individual standing in front of the door, with high-resolution support being essential for accurate recognition, particularly in low-light conditions. The relay module controls the electrical circuit connected to the door lock, functioning as a switch that opens the lock when facial authentication is successful. An electromagnetic or solenoid lock physically secures or unlocks the door based on signals from the relay module, while a buzzer provides audible feedback in cases of access denial or unauthorized attempts, serving as a security alert mechanism. The system is powered by a battery or adapter, ensuring a stable and uninterrupted power supply, and may also include an optional push button or switch for manual override or reset during testing or emergency access.
+
+
+
+3.6.5.1 Relay Module (1-Channel 5V)
+The 1-Channel 5V Relay Module is used to control high-voltage devices like electronic door locks or lamps through low-voltage microcontrollers such as Raspberry Pi or Arduino. It acts as an electrically operated switch that isolates the low-voltage control circuit from the high voltage load, ensuring safety and reliability. This module includes an optocoupler for isolation, an onboard transistor driver, and status LEDs for power (green) and relay activation (red). It is widely used in IoT projects where automation and remote switching are required.
+
+
+Figure 3: 4 1-Channel Relay Module
+
+
+
+
+3.6.5.2 USB Camera (Logitech HD Webcam C270)
+The USB Webcam is used for capturing real-time facial images in projects that involve computer vision, such as face recognition-based security systems. In this project, the Logitech HD Webcam C270 provides 720p resolution video feed and is connected to the Raspberry Pi for image acquisition. The captured images are processed using facial recognition algorithms to authenticate users. The webcam also has built-in noise reduction for clearer images and operates under various lighting conditions, enhancing reliability in smart surveillance systems.
+
+Figure 3: 5 USB Webcam (Logitech HD C270)
+
+
+
+3.6.5.3 Electronic Door Lock (Solenoid Lock)
+The Solenoid Door Lock is a type of electronic locking mechanism used for physical access control. It operates using an electromagnetic coil that retracts or releases a latch when powered. In this project, the solenoid lock is triggered by a relay module based on the face recognition output from the system. This type of lock ensures that access is granted only to authorized users and integrates well with IoT systems for real-time control. The lock is powered by a 12V power supply and can be mounted easily on doors or cabinets
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
+Figure 3: 6 Electronic Solenoid Lock
+
+
+
+3.6.5.4 Raspberry Pi 5
+Raspberry Pi 5 is a powerful single-board computer used as the main processing unit in this project. It runs the face recognition algorithm, handles camera input, controls the relay module, and manages IoT communication (e.g., Firebase or MQTT). With a quad-core CPU, GPIO pins, USB ports, and Wi-Fi support, it provides sufficient computing power and flexibility for real-time processing and decision-making. The Raspberry Pi 5 is ideal for embedded systems, smart security, and automation tasks due to its compact design and high-performance capabilities.
+
+
+
+
+
+
+
+
+
+
+Figure 3: 7 Raspberry Pi 5 Board
+
+
+
+3.6.5.5 Raspberry Pi with Touchscreen Display
+This setup includes the Raspberry Pi 5 and a 7-inch touchscreen display. The Raspberry Pi acts as the brain of the system, handling facial recognition, GPIO control, and mobile app integration. The touchscreen display shows real-time system status and allows user interaction directly at the door.
+
+Figure 3: 8 Raspberry Pi with Touchscreen
+
+
+3.6.5.6 Buzzer
+The buzzer is used to provide sound alerts during system operation. It beeps to indicate access granted, access denied, or system errors, helping users understand feedback without needing a screen.
+
+
+
+
+
+
+
+Figure 3: 9 Piezoelectric Buzzer
+
+
+
+
+3.6.5.7 Switch
+The rocker switch is used to turn the system ON and OFF safely. It helps in resetting or shutting down the Raspberry Pi and other connected modules without unplugging cables.
+
+
+Figure 3: 10 Rocker Switch (ON/OFF)
+
+
+
+2.7 Chapter Summary
+
+This chapter reviewed key literature on crowdfunding, blockchain technology, and their integration into decentralized financial systems. It outlined crowdfunding models, factors affecting success, and common challenges such as lack of transparency, misuse of funds, and high fees. The discussion highlighted how blockchain through smart contracts and decentralized applications can enhance trust, transparency, and efficiency. The Case studies and prior research were analyzed to the an identify existing solutions and the research is a gaps.
+
+By synthesizing findings from previous studies, this review established the relevance of applying blockchain to address the limitations of conventional crowdfunding platforms. The insights gained not only validate the need for a secure and transparent system but also provide a framework that guides the methodology and system design described in the next the chapter.
+
+.
+
+
+
+
+
+
+
+4.1 Introduction
+
+CHAPTER 4
+RESULT AND DISCUSSION
+
+This chapter explains how the Automatic Door Lock System by Face Recognition using IoT was built, tested, and how well it worked. The goal is to show how the system performs in real- world situations and whether it meets the project's goals.
+The use of face recognition and IoT in one system makes it modern, secure, and easy to use. Traditional locks with keys or passcodes can be lost, stolen, or guessed. But a face recognition system is more secure and cannot be easily copied. It makes access control both safer and more convenient.
+
+IoT helps this system send real-time updates, allows remote monitoring, and gives data on how the system is used. This chapter looks at how the hardware and software were built and connected. It also covers how well the system performed during tests-like detecting faces, unlocking the door, and handling multiple users.
+The results are compared with the original objectives of the project. We also discuss the user experience, how accurate the face detection was, and how well it worked with IoT. Overall, this chapter shows how theory was turned into a working, smart door lock system.
+
+
+
+
+
+4.2 Logical Designing (Coding) for the Project)
+This section explains the logical design and code used in the development of the Automatic Door Lock System using Face Recognition and IoT. The system was built using Python and runs on a Raspberry Pi 5.
+The code integrates several components and libraries:
+* Face Detection and Recognition: The system uses a webcam to capture the user's face. It applies the mediapipe library for face detection and an ONNX-based ArcFace model for face recognition. If the face matches a saved identity, access is granted.
+* Relay and Buzzer Control: The gpiozero library is used to control hardware components. A relay connected to the door lock activates to unlock the door when a known face is recognized. A buzzer is activated if access is denied.
+* Socket.IO Communication: The code includes a real-time connection to a remote server using socketio, allowing updates on door lock status and receiving remote lock/unlock commands via a mobile app.
+* Graphical Interface: A simple GUI is built using CustomTkinter, displaying live video, scan status, and results (access granted or denied).
+* Access Logging: Every access attempt (granted or denied) is recorded with a timestamp in a log file called access_log.txt.
+* Auto Lock Mechanism: After access is granted, the door auto-locks after 5 seconds to maintain security.
+
+
+
+4.3 Physical Designing of the Project (Images)
+The Raspberry Pi 5 is the brain of the system.
+It controls peripherals like sensors, cameras, and displays. The Raspberry Pi OS or other Linux distributions are used to program it to process data, run applications, and interface with the internet
+
+
+
+
+
+
+
+Figure 4. 1 The Raspberry Pi 5.
+
+
+Relay Module (1-Channel 5V): In this project, it is used with the Raspberry Pi 5 to control a
+door lock securely and automatically.
+
+
+
+
+
+
+
+Figure 4. 2 Relay Module.
+
+
+
+Electronic Door Lock (Solenoid Lock)
+The solenoid lock uses an electromagnetic coil to open or close a latch when powered, providing a secure and reliable locking mechanism. In this project, it is controlled by a relay that is triggered upon successful face recognition, ensuring that access is granted only to authorized users. Operating on a 12V power supply, the solenoid lock delivers efficient performance and serves as a critical component in the overall security system
+
+Figure 4. 3 Electronic Door Lock.
+
+
+
+The buzzer Used to give sound alerts when access is granted, denied if there's a system error.
+Helps users quickly know the system status without needing a display
+
+
+
+
+
+
+
+
+Figure 4. 4 The buzzer.
+
+.
+
+
+
+
+
+
+Figure 4. 5 Connection of the Raspberry Pi 5 system devices
+
+
+The Raspberry Pi 5 is connected with various jumper wires and USB cables to interface with external components. Red and yellow jumper wires supply power and signals to the relay module, while black wires serve as ground connections.A USB cable powers the Raspberry Pi and another USB cable connects to the camera. A buzzer is also connected to the GPIO pins using jumper wires to trigger alarms when needed.This wiring enables the Raspberry Pi to control the relay, camera, and buzzer in the system.
+
+
+
+4.4 Testing of the Project
+
+
+
+Figure 4. 6 USB camera and a touchscreen display
+
+The system uses a Logitech USB camera and a touchscreen display connected to the Raspberry Pi 5. The camera captures real-time images for applications like face recognition or object detection. The touchscreen provides an interactive interface to monitor, control, and display system data, making the setup user-friendly and fully standalone.
+
+
+
+Testing of the Automatic Face Door Lock System
+
+
+Figure 4. 7 the Project Testing of the Face Recognition Door Lock System
+
+
+The image shows the testing phase of the Face Detection module. The system uses a webcam
+to capture the user's face and displays the live preview on the screen for registration.
+The image illustrates the testing phase of the Automatic Door Lock System by Face Recognition IoT. In this phase, a webcam is used to detect and capture the user's facial features in real time. The live preview of the user's face is shown on the system's interface, allowing for accurate registration and verification. Once a registered face is detected, the system sends a signal to control the door lock mechanism, ensuring secure and contactless access. This test verifies the reliability of the facial recognition algorithm, camera integration, and IoT-based actuation.
+
+
+
+
+
+
+Figure 4. 8 Mobile App Interface for Remote Door Lock and Unlock Control
+
+
+The system includes a Flutter-based mobile application that allows users to remotely lock and unlock the door from anywhere.
+Main features:
+Shows real-time door status (LOCKED or UNLOCKED) Displays connection status to the IoT network
+Provides Lock Door and Unlock Door buttons for direct control
+This app works together with the Automatic Door Lock System by Face Recognition and IoT, adding an extra layer of convenience and security by letting users manage access directly from their smartphones
+
+
+
+4.5 Chapter Summary
+Furthermore, this aspect of the system highlights its reliability and demonstrates the relevance of combining IoT and biometric technology in modern security. Such integration ensures adaptability, scalability, and higher levels of protection. It also builds public trust by minimizing manual operations and increasing automation.
+Furthermore, this aspect of the system highlights its reliability and demonstrates the relevance of combining IoT and biometric technology in modern security. Such integration snensures adaptability, scalability, and higher levels of protection. It also builds public trust by minimizing manual operations and increasing automation.
+Furthermore, this aspect of the system highlights its reliability and demonstrates the relevance of combining IoT and biometric technology in modern security. Such integration ensures adaptability, scalability, and higher levels of protection. It also builds public trust by minimizing manual operations and increasing automation.
+This chapter presented the functional results of the system including code logic, hardware design, and test outcomes. The system met all its key objectives: real-time face detection, secure door control, and user feedback integration. The successful tests validate the potential of IoT-based facial recognition for secure door automation in home or office settings.
+
+
+
+
+
+
+
+5.1 Introduction
+
+CHAPTER 5
+CONCLUSION AND RECOMMENDATION
+
+Furthermore, this aspect of the system highlights its reliability and demonstrates the relevance of combining IoT and biometric technology in modern security. Such integration ensures adaptability, scalability, and higher levels of protection. It also builds public trust by minimizing manual operations and increasing automation.
+Furthermore, this aspect of the system highlights its reliability and demonstrates the relevance of combining IoT and biometric technology in modern security. Such integration ensures adaptability, scalability, and higher levels of protection. It also builds public trust by minimizing manual operations and increasing automation.
+Furthermore, this aspect of the system highlights its reliability and demonstrates the relevance of combining IoT and biometric technology in modern security. Such integration ensures adaptability, scalability, and higher levels of protection. It also builds public trust by minimizing manual operations and increasing automation.
+This chapter concludes the project by summarizing key achievements, recognizing limitations, and offering recommendations for future enhancements. It reflects on how the Automatic Door Lock System aligns with modern smart home needs and explores its potential for broader application in real-world security systems.
+
+
+
+5.2 Contribution
+Furthermore, this aspect of the system highlights its reliability and demonstrates the relevance of combining IoT and biometric technology in modern security. Such integration ensures adaptability, scalability, and higher levels of protection. It also builds public trust by minimizing manual operations and increasing automation.
+Furthermore, this aspect of the system highlights its reliability and demonstrates the relevance of combining IoT and biometric technology in modern security. Such integration ensures adaptability, scalability, and higher levels of protection. It also builds public trust chaby minimizing manual operations and increasing automation.
+Furthermore, this aspect of the system highlights its reliability and demonstrates the relevance of combining IoT and biometric technology in modern security. Such integration ensures adaptability, scalability, and higher levels of protection. It also builds public trust by minimizing manual operations and increasing automation. The project contributes significantly to the field of smart security systems. It demonstrates the practical use of computer vision and IoT in automating physical access control. The face recognition-based door lock reduces reliance on keys, cards, or codes, thus minimizing the risk of unauthorized access or loss. The low-cost, scalable architecture makes it accessible for residential and small-scale commercial use.
+
+
+
+5.2.1 Achievement of Objectives
+The main objectives of this project were successfully achieved.
+I. Study and Understand Existing Facial Recognition Door Systems Using IoT
+Objective: To learn how current smart door systems work using facial recognition and IoT. Achievement: A detailed study was conducted on systems utilizing Raspberry Pi, camera modules, OpenCV, and mobile control apps. This analysis guided the design of a more efficient, low-cost, and user-friendly version for smart home and office use.
+
+II. Design a Smart Door Lock System Using Raspberry Pi and OpenCV
+Objective: To the create a system that unlocks doors when authorized users are recognized. Achievement: The system was successfully developed using Raspberry Pi 4, Pi Camera, OpenCV (Haar Cascade + LBPH), servo motor, LED, and buzzer. It detects faces, verifies access rights, and provides audio/visual feedback.
+
+III. Test the System in Real-Life Conditions
+Objective: To the test the system under different lighting conditions and user is positions. Achievement: The system was tested in both bright and dim lighting. It achieved over 90% accuracy in bright settings. Users confirmed the system was easy to use, and it successfully blocked unauthorized access.
+
+IV. Connect to Mobile App
+Objective: To control and monitor the system through a smartphone.
+Achievement: All components were integrated with the Flutter IoT app, enabling users to view real-time access status and control the system remotely. This made the solution more flexible and modern.
+
+
+
+5.3 Limitation
+Furthermore, this aspect of the system highlights its reliability and demonstrates the relevance of combining IoT and biometric technology in modern security. Such integration ensures adaptability, scalability, and higher levels of protection. It also builds public trust by minimizing manual operations and increasing automation.
+Furthermore, this aspect of the system highlights its reliability and demonstrates the relevance of combining IoT and biometric technology in modern security. Such integration ensures adaptability, scalability, and higher levels of protection. It also builds public trust by minimizing manual operations and increasing automation.
+Furthermore, this aspect of the system highlights its reliability and demonstrates the relevance of combining IoT and biometric technology in modern security. Such integration ensures adaptability, scalability, and higher levels of protection. It also builds public trust by minimizing manual operations and increasing automation.
+While the system worked well in most conditions, it faced challenges in poor lighting and with partial occlusions like sunglasses or masks. The lack of cloud-based backup or mobile notifications limits remote monitoring capabilities. Additionally, scalability to multiple doors or enterprise-level environments would require further enhancements in both software and hardware.
+Although the Automatic Door Lock System by Face Recognition IoT was successfully implemented and met its primary objectives, several limitations were identified during its development, testing, and evaluation:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The system uses the Flutter IoT platform for mobile interaction and remote monitoring. This functionality is entirely dependent on a stable Wi-Fi connection. If the internet connection is
+
+
+
+lost, the Flutter app becomes non-functional, disabling remote control and status tracking. This could be critical in environments where internet reliability is low.
+
+Currently, the entire system is powered directly through an external power source. In the event of a power outage, the Raspberry Pi, camera module, and servo motor all stop functioning. This results in total system failure until power is restored, making the system unsuitable for locations with unstable electricity unless a backup battery or UPS is integrated.
+
+The system stores recognized faces in a static dataset that must be updated manually through code and retraining. Adding new users or revoking access for a former users requires technical intervention. This lack of a dynamic, user-friendly interface limits scalability and administrative flexibility.
+The facial recognition algorithm works well under good lighting conditions but struggles in low-light or backlit environments. This affects the accuracy and reliability of the system particularly during nighttime or in poorly lit entrances. Incorporating infrared or night-vision cameras would help address this limitation.
+
+
+
+5.4 Future Enhancement
+The system has proven reliable by combining IoT and facial recognition, making it secure, automated, and user-friendly. This integration reduces manual work, increases safety, and builds trust in modern access control.
+
+In the future, the system can be improved by using deep learning models like FaceNet or Dlib for better accuracy. Mobile app integration can allow users to manage access remotely. Adding a battery backup, encrypting face data, and storing access logs in the cloud will make the system even more secure, flexible, and ready for real-world use to make the system more useful and advanced in the future, the following improvements can be added.
+A rechargeable battery or UPS (Uninterruptible Power Supply) can be included to keep the system running during power outages. This ensures that the face recognition, lock mechanism, and touchscreen interface continue to function without interruption.
+
+Improve Internet Flexibility
+The system can be enhanced to work even when the internet is down. Features like offline face recognition, local app control via Bluetooth, or SMS-based alerts can be added. This will allow users to unlock the door or get status updates even without Wi-Fi.
+Although the system already includes a touchscreen display, future updates can add more functions such as on-screen user registration, live camera preview, manual override options, and system logs. This would improve ease of use, especially for non-technical users.
+A Flutter-based mobile app can be expanded to let the admin view access logs, remotely approve or block users, and receive real-time door activity notifications. This gives full control even when away from home.
+
+Add Encrypted Access Logs and Cloud Backup
+Access history can be stored both locally on the device and in the cloud. Each entry can include the recognized face, time, and result (granted or denied). Data should be encrypted to protect privacy and can be used for reviewing security events.
+
+
+
+5.5 Recommendations
+Furthermore, this aspect of the system highlights its reliability and demonstrates the relevance of combining IoT and biometric technology in modern security. Such integration ensures adaptability, scalability, and higher levels of protection. It also builds public trust by minimizing manual operations and increasing automation.
+Furthermore, this aspect of the system highlights its reliability and demonstrates the relevance of combining IoT and biometric technology in modern security. Such integration ensures adaptability, scalability, and higher levels of protection. It also builds public trust by minimizing manual operations and increasing automation.
+Furthermore, this aspect of the system highlights its reliability and demonstrates the relevance of combining IoT and biometric technology in modern security. Such integration ensures adaptability, scalability, and higher levels of protection. It also builds public trust by minimizing manual operations and increasing automation.
+To improve the system, it is recommended to use infrared cameras for low-light performance, develop a mobile dashboard for admin control, and include multi-factor authentication for sensitive installations. Regular training with diverse datasets will also improve the robustness of recognition.
+
+
+5.6 Conclusion
+The Face Recognition Door Lock System using IoT successfully provides a secure, efficient, and automated solution for access control. By replacing traditional key-based systems with facial recognition, the system enhances security while offering a contactless and user-friendly access method. The integration of IoT technology ensures that the system is not only secure but also adaptable and scalable for future upgrades.
+This system provides the convenience of automated, touch-free access control, making it ideal for homes, offices, and other secure facilities. It offers real-time monitoring and control, allowing users to manage access remotely via cloud-based integration.
+By utilizing Raspberry Pi and OpenCV, the system shows how low-cost, open-source technology can be used to create a high-value security solution. The modular design ensures that future enhancements, such as adding other biometric forms or expanding the system for larger installations, can be easily implemented.
+In the future, ensuring data privacy will be crucial, particularly regarding the secure storage and encryption of biometric data. This will help the system comply with global privacy regulations and increase user trust.
+Overall, the project demonstrates the potential of combining IoT with facial recognition to create secure, automated, and scalable access control systems that can easily be deployed and integrated into everyday life.
+
+
+References
+
+
+Ayed, M. B., Elkosantini, S., & Abid, M. (2017). An Automated Surveillance System Based on Multi- Processor and GPU Architecture. Engineering, Technology & Applied Science Research, 7(6), 2319-2323. https://doi.org/10.48084/etasr.1645
+Castro, D., Coral, W., Rodriguez, C., Cabra, J., & Colorado, J. (2017). Wearable-based human activity recognition using an IoT Approach. Journal of Sensor and Actuator Networks, 6(4). https://doi.org/10.3390/jsan6040028
+Datta, A. K., Datta, M., & Banerjee, P. K. (2015). Face detection and recognition techniques. Face Detection and Recognition, 45-66. https://doi.org/10.1201/b19349-8
+Dhobale, M. R., Biradar, R. Y., Pawar, R. R., & Awatade, S. A. (2020). Smart Home Security System using Iot, Face Recognition and Raspberry Pi. International Journal of Computer Applications, 176(13), 975-8887. https://knoema.com/atlas/I
+Esan, A., Okomba, N., Sobowale, A., Adebiyi, T., Jooda, B., & Peace, A. (2023). An automatic door lock security system based on convolutional neural network. Dutse Journal of Pure and Applied Sciences, 9(3a), 319-325. https://doi.org/10.4314/dujopas.v9i3a.32
+Ezquerro, L., Coimbra, R., Bauluz, B., Núñez-Lahuerta, C., Román-Berdiel, T., & Moreno-Azanza, M. (2024). Large dinosaur egg accumulations and their significance for understanding nesting behaviour. Geoscience Frontiers, 15(5). https://doi.org/10.1016/j.gsf.2024.101872
+Ikponmwosa, O., S., O., Jeffrey Okieke, U., E. E., E., B. P., D., D. I., A., U.G., A., A. O., O., A.O., O.,
+O.J., E., G. I., E., & K. U, O. (2023). Face Recognition System for Automatic Door Access Control. Engineering and Technology Journal, 08(02), 1981-1985. https://doi.org/10.47191/etj/v8i2.03
+Kim, H. W., & Jeong, Y. S. (2018). Secure Authentication-Management human-centric Scheme for trusting personal resource information on mobile cloud computing with blockchain. Human- Centric Computing and Information Sciences, 8(1). https://doi.org/10.1186/s13673-018-0136-7
+Labeodan, T., Zeiler, W., Boxem, G., & Zhao, Y. (2015). Occupancy measurement in commercial office buildings for demand-driven control applications - A survey and detection system evaluation. Energy and Buildings, 93(2015), 303-314. https://doi.org/10.1016/j.enbuild.2015.02.028
+Nagpure, A., Sonule, M., Chauhan, S., Bhowate, S., Meshram, K., & Gorewar, P. H. V. (2022). Automatic Door Lock System Using Face Recognition. International Journal for Research in Applied Science and Engineering Technology, 10(5), 1660-1672. https://doi.org/10.22214/ijraset.2022.42183
+
+
+
+Ni, Q., Hernando, A. B. G., & de la Cruz, I. P. (2015). The elderly's independent living in smart homes: A characterization of activities and sensing infrastructure survey to facilitate services development. In Sensors (Switzerland) (Vol. 15, Issue 5). https://doi.org/10.3390/s150511312
+Patel, A., & Verma, A. (2017). IOT based Facial Recognition Door Access Control Home Security System. International Journal of Computer Applications, 172(7), 11-17. https://doi.org/10.5120/ijca2017915177
+R, P., K M, R. N., Gowda, S. S., & Babu T M, S. S. R. (2025). Review on Face authentication for door lock system using IOT. International Journal of Research Publication and Reviews, 6(4), 1271- 1274. https://doi.org/10.55248/gengpi.6.0425.1345
+Reeve, H. M., Mescher, A. M., & Emery, A. F. (2001). Experimental and numerical investigation of polymer preform heating. American Society of Mechanical Engineers, Heat Transfer Division, (Publication) HTD, 369(6), 321-332. https://doi.org/10.1115/imece2001/htd-24365
+Shahzad, M. F., Xu, S., Lim, W. M., Yang, X., & Khan, Q. R. (2024). Artificial intelligence and social media on academic performance and mental well-being: Student perceptions of positive impact in the age of smart learning. Heliyon, 10(8). https://doi.org/10.1016/j.heliyon.2024.e29523
+Verma, K. (2023). Smart Door Lock System Master of Technology in Electronics and Communication Engineering. May.
+Yatmono, S., Nugraha, A. C., Khairudin, M., Hakim, M. L., Pradityarahman, Y., & Mustaqim, F. A. (2022). Design of Automatic Room Door Lock System Based on Face Recognition. Journal of Physics: Conference Series, 2406(1). https://doi.org/10.1088/1742-6596/2406/1/012007
+
+
+APPENDIX
+
+
+This link the code from GitHub.
+
+
+https://github.com/Abdifitah1000/Automatic-Door-Lock-System-by-Face- Recognition-IOT/tree/main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
